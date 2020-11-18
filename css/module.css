@@ -1,53 +1,27 @@
 .inner-box {
     border: 1px solid #b1b0b0;
-    height: calc(100% - 1px);
 }
 .box p {
     color: #b1b0b0;
-    vertical-align: middle;
-    line-height: 1.5;
-    display: inline-block;
 }
-.box-a .inner-box {
-    background-color: tomato;
-}
-.box-b .inner-box {
-    background-color: darkslateblue;
-}
-.box-two .inner-box {
-    background-color: orangered;
-}
-.box-four .inner-box {
-    background-color: palevioletred;
-}
-.box-last .inner-box {
-    background-color: rgb(46, 135, 252);
-}
-
 @media(min-width: 768px) {
 
-    .box-a .inner-box {
-        height: calc(100% - 1px);
-    }
     .box-b .inner-box {
         border-top: 0;
-        height: calc(100% - 1px);
     }
     .box-two .inner-box {
         border-left: 0;
         border-top: 0;
-        height: calc(100% - 1px);
     }
     .box-four .inner-box {
         border-left: 0;
         border-top: 0;
-        height: calc(100% - 1px);
     }
     .box-last .inner-box {
         border-left: 0;
         border-top: 0;
-        height: calc(100% - 1px);
     }
+    
 }
 @media(max-width: 767px) {
     
@@ -60,4 +34,56 @@
     .box-a .inner-box {
         border-top: 1px solid #b1b0b0;
     }
+    .box-a .inner-box {
+        background-color: darkslateblue;
+    }
+    .box-b .inner-box {
+        background-color: palevioletred;
+    }
+    .box-two .inner-box {
+        background-color: rgb(46, 135, 252);
+    }
+    .box-four .inner-box {
+        background-color:  tomato;
+    }
+    .box-last .inner-box {
+        background-color:  orangered;
+    }
 }
+
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .box-a .inner-box {
+        background-color:   rgb(46, 135, 252);
+    }
+    .box-b .inner-box {
+        background-color: orangered;
+    }
+    .box-two .inner-box {
+        background-color:  palevioletred;;
+    }
+    .box-four .inner-box {
+        background-color: tomato;
+    }
+    .box-last .inner-box {
+        background-color:darkslateblue;
+    }
+}
+@media(min-width: 992px) {
+    .box-a .inner-box {
+        background-color: tomato;
+    }
+    .box-b .inner-box {
+        background-color: darkslateblue;
+    }
+    .box-two .inner-box {
+        background-color: orangered;
+    }
+    .box-four .inner-box {
+        background-color: palevioletred;
+    }
+    .box-last .inner-box {
+        background-color: rgb(46, 135, 252);
+    }
+}
+
